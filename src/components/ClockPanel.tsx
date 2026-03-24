@@ -163,7 +163,7 @@ export default function ClockPanel({ data }: ClockPanelProps) {
                 <rect x="188" y="74" width="24" height="126" rx="4" className="clock-hour-hand" />
               </g>
               <g transform={`rotate(${minuteAngle} 200 200)`}>
-                <rect x="196" y="18" width="8" height="182" rx="4" className="clock-minute-hand" />
+                <rect x="195" y="18" width="10" height="182" rx="2.5" className="clock-minute-hand" />
               </g>
             </svg>
           </div>

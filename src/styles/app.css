@@ -261,7 +261,9 @@
 }
 
 .clock-minute-hand {
-  fill: #050505;
+  fill: none;
+  stroke: #050505;
+  stroke-width: 2.4;
 }
 
 .clock-drivers-section {
@@ -492,24 +494,6 @@
   color: var(--muted);
 }
 
-.panel-info-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: none;
-  border: none;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.15s;
-}
-
-.panel-info-btn:hover {
-  opacity: 1;
-}
 
 .breakdown-list {
   display: grid;
@@ -817,7 +801,7 @@
   }
 
   .panel-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .evidence-item h3,

@@ -22,11 +22,11 @@ function InfoButton({ section }: { section: string }) {
   return (
     <>
       <button
-        className="panel-info-btn"
+        className="clock-title-action"
         aria-label={`About ${section}`}
         onClick={() => setOpen(true)}
       >
-        ↗
+        →
       </button>
       {open && (
         <div className="definition-modal-backdrop" onClick={() => setOpen(false)}>
