@@ -1,0 +1,147 @@
+[
+  {
+    "id": "signal-capability-2026-03",
+    "title": "Model capability",
+    "summary": "Public benchmark leaders continue to improve on reasoning and computer-use tasks that map onto real desk work.",
+    "date": "2026-03-23",
+    "source": "ARC Prize Leaderboard / OSWorld",
+    "sourceUrl": "https://arcprize.org/leaderboard",
+    "effect": "advance",
+    "contributionType": "slow_variable",
+    "impactLabel": "+ capability",
+    "tags": [
+      "capability",
+      "agent"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-adoption-2026-03",
+    "title": "Enterprise adoption",
+    "summary": "AI is moving from pilot projects into production workflows across large organizations.",
+    "date": "2026-03-23",
+    "source": "Stanford AI Index",
+    "sourceUrl": "https://hai.stanford.edu/ai-index",
+    "effect": "advance",
+    "contributionType": "slow_variable",
+    "impactLabel": "+ adoption",
+    "tags": [
+      "adoption",
+      "enterprise"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-labor-2026-03",
+    "title": "Labor displacement",
+    "summary": "Hiring restraint and workflow substitution are increasingly visible, even when public labor data lags direct enterprise deployment.",
+    "date": "2026-03-23",
+    "source": "Layoffs.fyi / Stanford AI Index",
+    "sourceUrl": "https://layoffs.fyi/",
+    "effect": "advance",
+    "contributionType": "slow_variable",
+    "impactLabel": "+ labor",
+    "tags": [
+      "labor",
+      "employment"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-policy-2026-03",
+    "title": "Policy support",
+    "summary": "National and regional policy support for AI deployment remains material even as governance requirements evolve.",
+    "date": "2026-03-23",
+    "source": "OECD AI Policy Observatory",
+    "sourceUrl": "https://oecd.ai/en/",
+    "effect": "advance",
+    "contributionType": "slow_variable",
+    "impactLabel": "+ policy",
+    "tags": [
+      "policy",
+      "governance"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-sentiment-2026-03",
+    "title": "Corporate intent",
+    "summary": "Executives increasingly frame AI as a tool for scaling output without proportional headcount growth.",
+    "date": "2026-03-23",
+    "source": "Stanford AI Index",
+    "sourceUrl": "https://hai.stanford.edu/ai-index",
+    "effect": "advance",
+    "contributionType": "slow_variable",
+    "impactLabel": "+ intent",
+    "tags": [
+      "corporate",
+      "intent"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-friction-2026-03",
+    "title": "Institutional friction",
+    "summary": "Regulation, trust, and reliability constraints still absorb momentum and keep deployment uneven.",
+    "date": "2026-03-23",
+    "source": "OECD AI Policy Observatory",
+    "sourceUrl": "https://oecd.ai/en/",
+    "effect": "delay",
+    "contributionType": "slow_variable",
+    "impactLabel": "- friction",
+    "tags": [
+      "policy",
+      "friction"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "eu-ai-act-first-obligations-apply",
+    "title": "First EU AI Act obligations begin applying",
+    "summary": "The first operative obligations under the EU AI Act start to apply, adding compliance and governance friction to some workplace AI deployments across the European market.",
+    "date": "2025-02-02",
+    "source": "EUR-Lex AI Act / OECD AI Policy Observatory",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "effect": "delay",
+    "contributionType": "shock",
+    "impactLabel": "- friction",
+    "tags": [
+      "policy",
+      "eu"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "ibm-pause-hiring-replaceable-back-office-roles",
+    "title": "IBM says AI may replace work tied to 7,800 back-office roles",
+    "summary": "Reuters reported IBM would pause hiring for back-office functions that the company believed AI and automation could absorb over time, making labor substitution pressure explicit rather than implied.",
+    "date": "2023-05-01",
+    "source": "Reuters AI and labor reporting / Stanford AI Index",
+    "sourceUrl": "https://www.reuters.com/technology/ibm-ceo-says-ai-may-replace-7800-jobs-paused-hiring-2023-05-01/",
+    "effect": "advance",
+    "contributionType": "shock",
+    "impactLabel": "+ milestone",
+    "tags": [
+      "labor",
+      "us",
+      "global"
+    ],
+    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "methodologyVersion": "v1",
+    "reviewStatus": "accepted"
+  }
+]

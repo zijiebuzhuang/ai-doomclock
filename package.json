@@ -1,0 +1,31 @@
+{
+  "name": "doomsday-clock",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate:data": "node scripts/validate-data.mjs",
+    "compute": "node scripts/compute-clock.mjs",
+    "fetch:sources": "node scripts/fetch-sources.mjs",
+    "build:evidence": "node scripts/build-evidence.mjs",
+    "export:docs": "node scripts/export-public-docs.mjs",
+    "prepare:public": "node scripts/prepare-public.mjs",
+    "refresh:data": "npm run fetch:sources && npm run build:evidence && npm run compute",
+    "prepare:release": "npm run refresh:data && npm run export:docs && npm run prepare:public"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.60.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.8.3",
+    "vite": "^7.1.7"
+  }
+}

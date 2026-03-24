@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "title", "publisher", "url", "tier", "contribution", "reviewStatus", "whyIncluded"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "publisher": { "type": "string" },
+    "url": { "type": "string" },
+    "tier": { "type": "string" },
+    "contribution": { "type": "string" },
+    "reviewStatus": { "type": "string" },
+    "whyIncluded": { "type": "string" }
+  }
+}

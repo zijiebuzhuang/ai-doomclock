@@ -1,0 +1,80 @@
+[
+  {
+    "id": "signal-capability-2026-03",
+    "date": "2026-03-23",
+    "key": "capability",
+    "label": "Model capability",
+    "value": 70,
+    "direction": "advance",
+    "detail": "Public benchmark leaders continue to improve on reasoning and computer-use tasks that map onto real desk work.",
+    "sourceIds": ["arc-prize", "osworld"],
+    "impactLabel": "+ capability",
+    "tags": ["capability", "agent"],
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-adoption-2026-03",
+    "date": "2026-03-23",
+    "key": "adoption",
+    "label": "Enterprise adoption",
+    "value": 64,
+    "direction": "advance",
+    "detail": "AI is moving from pilot projects into production workflows across large organizations.",
+    "sourceIds": ["stanford-ai-index"],
+    "impactLabel": "+ adoption",
+    "tags": ["adoption", "enterprise"],
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-labor-2026-03",
+    "date": "2026-03-23",
+    "key": "labor",
+    "label": "Labor displacement",
+    "value": 58,
+    "direction": "advance",
+    "detail": "Hiring restraint and workflow substitution are increasingly visible, even when public labor data lags direct enterprise deployment.",
+    "sourceIds": ["layoffs-fyi", "stanford-ai-index"],
+    "impactLabel": "+ labor",
+    "tags": ["labor", "employment"],
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-policy-2026-03",
+    "date": "2026-03-23",
+    "key": "policy",
+    "label": "Policy support",
+    "value": 46,
+    "direction": "advance",
+    "detail": "National and regional policy support for AI deployment remains material even as governance requirements evolve.",
+    "sourceIds": ["oecd-ai-policy"],
+    "impactLabel": "+ policy",
+    "tags": ["policy", "governance"],
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-sentiment-2026-03",
+    "date": "2026-03-23",
+    "key": "sentiment",
+    "label": "Corporate intent",
+    "value": 67,
+    "direction": "advance",
+    "detail": "Executives increasingly frame AI as a tool for scaling output without proportional headcount growth.",
+    "sourceIds": ["stanford-ai-index"],
+    "impactLabel": "+ intent",
+    "tags": ["corporate", "intent"],
+    "reviewStatus": "accepted"
+  },
+  {
+    "id": "signal-friction-2026-03",
+    "date": "2026-03-23",
+    "key": "friction",
+    "label": "Institutional friction",
+    "value": 37,
+    "direction": "delay",
+    "detail": "Regulation, trust, and reliability constraints still absorb momentum and keep deployment uneven.",
+    "sourceIds": ["oecd-ai-policy"],
+    "impactLabel": "- friction",
+    "tags": ["policy", "friction"],
+    "reviewStatus": "accepted"
+  }
+]

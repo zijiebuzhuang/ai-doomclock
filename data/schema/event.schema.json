@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "date", "title", "summary", "effect", "severity", "halfLifeDays", "status", "eventType"],
+  "properties": {
+    "id": { "type": "string" },
+    "date": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "effect": { "type": "string" },
+    "severity": { "type": "number" },
+    "halfLifeDays": { "type": "number" },
+    "status": { "type": "string" },
+    "eventType": { "type": "string" }
+  }
+}

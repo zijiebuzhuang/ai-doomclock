@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ibm-pause-hiring-replaceable-back-office-roles",
+    "date": "2023-05-01",
+    "title": "IBM says AI may replace work tied to 7,800 back-office roles",
+    "summary": "Reuters reported IBM would pause hiring for back-office functions that the company believed AI and automation could absorb over time, making labor substitution pressure explicit rather than implied.",
+    "effect": "advance",
+    "severity": 4.5,
+    "halfLifeDays": 180,
+    "sourceIds": ["reuters-ai-labor", "stanford-ai-index"],
+    "status": "accepted",
+    "eventType": "labor",
+    "regions": ["us", "global"],
+    "reviewNote": "Accepted as a high-signal enterprise labor event based on corroborated reporting; kept as a shock rather than a slow variable because it is discrete and board-visible."
+  },
+  {
+    "id": "eu-ai-act-first-obligations-apply",
+    "date": "2025-02-02",
+    "title": "First EU AI Act obligations begin applying",
+    "summary": "The first operative obligations under the EU AI Act start to apply, adding compliance and governance friction to some workplace AI deployments across the European market.",
+    "effect": "delay",
+    "severity": 3,
+    "halfLifeDays": 365,
+    "sourceIds": ["eur-lex-eu-ai-act", "oecd-ai-policy"],
+    "status": "accepted",
+    "eventType": "policy",
+    "regions": ["eu"],
+    "reviewNote": "Accepted as a durable regulatory friction event because the date is fixed in the official legal text and materially affects deployment constraints."
+  }
+]

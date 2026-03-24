@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2026-03-22",
+    "displayTime": "04:17",
+    "minutesToMidnight": 257,
+    "rawEstimate": 31.6,
+    "actualReplacementEstimate": 12.4,
+    "compositeScore": 64.3,
+    "methodologyVersion": "v1"
+  },
+  {
+    "date": "2026-03-23",
+    "displayTime": "04:25",
+    "minutesToMidnight": 265,
+    "rawEstimate": 31.6,
+    "actualReplacementEstimate": 12.4,
+    "compositeScore": 52.5,
+    "methodologyVersion": "v1"
+  },
+  {
+    "date": "2026-03-24",
+    "displayTime": "04:58",
+    "minutesToMidnight": 298,
+    "rawEstimate": 29.3,
+    "actualReplacementEstimate": 12.3,
+    "compositeScore": 51.2,
+    "methodologyVersion": "v1"
+  }
+]

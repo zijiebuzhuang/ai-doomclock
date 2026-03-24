@@ -1,0 +1,26 @@
+{
+  "name": "Doomsday Clock",
+  "tagline": "A public, auditable clock tracking the progress of AI labor replacement.",
+  "description": "A public, auditable indicator of AI labor replacement pressure built from reviewed evidence, versioned methodology, and explicit uncertainty.",
+  "domain": "zijie.github.io",
+  "canonicalBase": "https://zijie.github.io/ai-doomclock",
+  "themeColor": "#000000",
+  "socialImage": "/assets/og-placeholder.png",
+  "twitterCard": "summary_large_image",
+  "keywords": [
+    "AI labor replacement",
+    "doomsday clock",
+    "public methodology",
+    "evidence stream",
+    "AI employment"
+  ],
+  "robots": "index,follow",
+  "cnameEnabled": false,
+  "docs": [
+    { "slug": "methodology", "title": "Public methodology" },
+    { "slug": "sources", "title": "Public sources" },
+    { "slug": "formula", "title": "Formula" },
+    { "slug": "governance", "title": "Governance" },
+    { "slug": "faq", "title": "FAQ" }
+  ]
+}
