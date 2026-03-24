@@ -477,6 +477,12 @@
   padding-top: 18px;
 }
 
+.panel-label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .panel-label {
   margin: 0;
   font-family: var(--font-ui);
@@ -486,17 +492,23 @@
   color: var(--muted);
 }
 
-.panel-copy {
-  margin: 10px 0 0;
+.panel-info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: none;
   color: var(--muted);
-  line-height: 1.6;
-  font-size: 14px;
-  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s;
 }
 
-.panel-copy-featured {
-  margin-top: 10px;
-  max-width: 420px;
+.panel-info-btn:hover {
+  opacity: 1;
 }
 
 .breakdown-list {
@@ -811,10 +823,5 @@
   .evidence-item h3,
   .evidence-item-featured h3 {
     font-size: 20px;
-  }
-
-  .evidence-date {
-    flex-direction: column;
-    gap: 4px;
   }
 }
