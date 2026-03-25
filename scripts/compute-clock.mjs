@@ -1,5 +1,6 @@
 import { writeFileSync } from 'node:fs'
 import { readJson } from './lib/read-json.mjs'
+import { writeRuntimeJson } from './lib/write-runtime-json.mjs'
 
 const now = new Date()
 const todayIso = now.toISOString()
@@ -184,4 +185,9 @@ writeFileSync(new URL('history.json', out), `${JSON.stringify(nextHistory, null,
 writeFileSync(new URL('evidence.json', out), `${JSON.stringify(nextEvidence, null, 2)}\n`)
 writeFileSync(new URL('metadata.json', out), `${JSON.stringify(metadata, null, 2)}\n`)
 
-console.log('generated outputs at data/generated/')
+writeRuntimeJson('current.json', current)
+writeRuntimeJson('history.json', nextHistory)
+writeRuntimeJson('evidence.json', nextEvidence)
+writeRuntimeJson('metadata.json', metadata)
+
+console.log('generated outputs at data/generated/ and public/runtime/')

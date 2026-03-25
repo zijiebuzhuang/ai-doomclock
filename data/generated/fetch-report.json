@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-25T05:18:16.424Z",
+  "fetchedAt": "2026-03-25T06:46:31.641Z",
   "mode": "auto-fetch-v2",
   "note": "Automated fetch updates slow-variable signals from approved sources using cleaned HTML extraction, distinct keyword weighting, and fallback to prior accepted state on fetch failure. Research-project sources are fetched as structured repository summaries and can apply small auxiliary boosts to mapped slow variables.",
   "domain": "zijiebuzhuang.github.io",
@@ -7,15 +7,15 @@
   "corpus": {
     "approvedSources": 16,
     "activeSources": 16,
-    "fetchedSources": 11,
-    "failedSources": 4,
+    "fetchedSources": 13,
+    "failedSources": 2,
     "skippedSources": 1
   },
   "sources": [
     {
       "sourceId": "stanford-ai-index",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "AI Index | Stanford HAI",
       "textLength": 6898,
       "keywordHits": 90,
@@ -24,13 +24,13 @@
     {
       "sourceId": "oecd-ai-policy",
       "status": "failed",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
-      "error": "fetch failed"
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
+      "error": "Command failed: python3 -c \nimport json, sys, urllib.request\nurl = sys.argv[1]\nheaders = json.loads(sys.argv[2])\nreq = urllib.request.Request(url, headers=headers)\nwith urllib.request.urlopen(req, timeout=30) as r:\n    sys.stdout.write(r.read().decode('utf-8', 'ignore'))\n https://oecd.ai/en/ {\"User-Agent\":\"Mozilla/5.0 (compatible; ClaudeCode/1.0; +https://github.com/anthropics/claude-code)\",\"Accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\"}\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1321, in do_open\n    h.request(req.get_method(), req.selector, req.data, headers,\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              encode_chunked=req.has_header('Transfer-encoding'))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1358, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1404, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1353, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1113, in _send_output\n    self.send(msg)\n    ~~~~~~~~~^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1057, in send\n    self.connect()\n    ~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1492, in connect\n    super().connect()\n    ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1023, in connect\n    self.sock = self._create_connection(\n                ~~~~~~~~~~~~~~~~~~~~~~~^\n        (self.host,self.port), self.timeout, self.source_address)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py\", line 870, in create_connection\n    raise exceptions[0]\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py\", line 855, in create_connection\n    sock.connect(sa)\n    ~~~~~~~~~~~~^^^^\nOSError: [Errno 65] No route to host\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n    with urllib.request.urlopen(req, timeout=30) as r:\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 187, in urlopen\n    return opener.open(url, data, timeout)\n           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 487, in open\n    response = self._open(req, data)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 504, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n                              '_open', req)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 464, in _call_chain\n    result = func(*args)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1369, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        context=self._context)\n                        ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1324, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [Errno 65] No route to host>\n"
     },
     {
       "sourceId": "layoffs-fyi",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "Layoffs.fyi - Tech and Startup Layoff Tracker",
       "textLength": 2186,
       "keywordHits": 11,
@@ -39,7 +39,7 @@
     {
       "sourceId": "arc-prize",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "ARC Prize - Leaderboard",
       "textLength": 3082,
       "keywordHits": 8,
@@ -48,7 +48,7 @@
     {
       "sourceId": "osworld",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
       "textLength": 16008,
       "keywordHits": 62,
@@ -58,27 +58,30 @@
       "sourceId": "reuters-ai-labor",
       "status": "skipped",
       "reason": "manual source",
-      "fetchedAt": "2026-03-25T05:18:16.424Z"
+      "fetchedAt": "2026-03-25T06:46:31.641Z"
     },
     {
       "sourceId": "eur-lex-eu-ai-act",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
-      "title": "",
-      "textLength": 157,
-      "keywordHits": 0,
-      "distinctKeywordHits": 0
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
+      "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+      "textLength": 590318,
+      "keywordHits": 2489,
+      "distinctKeywordHits": 6
     },
     {
       "sourceId": "eurostat",
-      "status": "failed",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
-      "error": "fetch failed"
+      "status": "fetched",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
+      "title": "Home - Eurostat",
+      "textLength": 7675,
+      "keywordHits": 15,
+      "distinctKeywordHits": 3
     },
     {
       "sourceId": "nber",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "National Bureau of Economic Research | NBER",
       "textLength": 13703,
       "keywordHits": 36,
@@ -87,13 +90,13 @@
     {
       "sourceId": "brookings-ai",
       "status": "failed",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
-      "error": "fetch failed"
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
+      "error": "Command failed: python3 -c \nimport json, sys, urllib.request\nurl = sys.argv[1]\nheaders = json.loads(sys.argv[2])\nreq = urllib.request.Request(url, headers=headers)\nwith urllib.request.urlopen(req, timeout=30) as r:\n    sys.stdout.write(r.read().decode('utf-8', 'ignore'))\n https://www.brookings.edu/topics/artificial-intelligence/ {\"User-Agent\":\"Mozilla/5.0 (compatible; ClaudeCode/1.0; +https://github.com/anthropics/claude-code)\",\"Accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\"}\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1321, in do_open\n    h.request(req.get_method(), req.selector, req.data, headers,\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              encode_chunked=req.has_header('Transfer-encoding'))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1358, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1404, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1353, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1113, in _send_output\n    self.send(msg)\n    ~~~~~~~~~^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1057, in send\n    self.connect()\n    ~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1492, in connect\n    super().connect()\n    ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py\", line 1023, in connect\n    self.sock = self._create_connection(\n                ~~~~~~~~~~~~~~~~~~~~~~~^\n        (self.host,self.port), self.timeout, self.source_address)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py\", line 870, in create_connection\n    raise exceptions[0]\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py\", line 855, in create_connection\n    sock.connect(sa)\n    ~~~~~~~~~~~~^^^^\nOSError: [Errno 65] No route to host\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n    with urllib.request.urlopen(req, timeout=30) as r:\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 187, in urlopen\n    return opener.open(url, data, timeout)\n           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 487, in open\n    response = self._open(req, data)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 504, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n                              '_open', req)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 464, in _call_chain\n    result = func(*args)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1369, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        context=self._context)\n                        ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py\", line 1324, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [Errno 65] No route to host>\n"
     },
     {
       "sourceId": "world-bank-open-data",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "World Bank Open Data | Data",
       "textLength": 3612,
       "keywordHits": 6,
@@ -102,7 +105,7 @@
     {
       "sourceId": "our-world-in-data-ai",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "Artificial Intelligence - Our World in Data",
       "textLength": 16760,
       "keywordHits": 120,
@@ -111,7 +114,7 @@
     {
       "sourceId": "ilo",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "ILO Homepage | International Labour Organization",
       "textLength": 4367,
       "keywordHits": 22,
@@ -119,14 +122,17 @@
     },
     {
       "sourceId": "ibm-investor",
-      "status": "failed",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
-      "error": "fetch failed"
+      "status": "fetched",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
+      "title": "Investor Relations | IBM",
+      "textLength": 173,
+      "keywordHits": 2,
+      "distinctKeywordHits": 1
     },
     {
       "sourceId": "alphabet-investor",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "title": "",
       "textLength": 1583,
       "keywordHits": 15,
@@ -135,7 +141,7 @@
     {
       "sourceId": "karpathy-jobs",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T05:18:16.424Z",
+      "fetchedAt": "2026-03-25T06:46:31.641Z",
       "projectKind": "github-repo",
       "repo": "karpathy/jobs",
       "defaultBranch": "master",
@@ -198,7 +204,7 @@
     {
       "key": "adoption",
       "id": "signal-adoption-2026-03-25",
-      "value": 56,
+      "value": 55,
       "sourceIds": [
         "stanford-ai-index",
         "oecd-ai-policy",
@@ -210,7 +216,7 @@
     {
       "key": "labor",
       "id": "signal-labor-2026-03-25",
-      "value": 56,
+      "value": 55,
       "sourceIds": [
         "layoffs-fyi",
         "ilo",
@@ -225,7 +231,7 @@
     {
       "key": "policy",
       "id": "signal-policy-2026-03-25",
-      "value": 34,
+      "value": 47,
       "sourceIds": [
         "oecd-ai-policy",
         "eur-lex-eu-ai-act",
@@ -250,7 +256,7 @@
     {
       "key": "friction",
       "id": "signal-friction-2026-03-25",
-      "value": 33,
+      "value": 39,
       "sourceIds": [
         "oecd-ai-policy",
         "eur-lex-eu-ai-act",

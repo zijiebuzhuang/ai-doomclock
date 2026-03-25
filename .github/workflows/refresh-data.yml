@@ -6,15 +6,15 @@ on:
     - cron: '17 */6 * * *'
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -23,15 +23,9 @@ jobs:
       - run: npm run validate:data
       - run: npm run export:docs
       - run: npm run prepare:public
-      - name: Commit refreshed data
-        run: |
-          git add data/sources/manifest.json data/signals/manifest.json data/events/manifest.json data/generated public/docs public/robots.txt public/sitemap.xml public/site.webmanifest
-          if [ -f public/CNAME ]; then git add public/CNAME; else git rm -f --ignore-unmatch public/CNAME; fi
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh doomsday clock data"
-          git push
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4

@@ -1,5 +1,6 @@
 import { writeFileSync } from 'node:fs'
 import { readJson } from './lib/read-json.mjs'
+import { writeRuntimeJson } from './lib/write-runtime-json.mjs'
 
 const site = readJson('data/site.json')
 const sources = readJson('data/sources/manifest.json')
@@ -22,4 +23,5 @@ const snapshot = {
 }
 
 writeFileSync(new URL('../data/generated/corpus.json', import.meta.url), `${JSON.stringify(snapshot, null, 2)}\n`)
+writeRuntimeJson('corpus.json', snapshot)
 console.log('evidence corpus snapshot generated')

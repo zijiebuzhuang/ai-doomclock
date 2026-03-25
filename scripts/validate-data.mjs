@@ -34,7 +34,7 @@ for (const source of sources) {
   if (source.reliabilityTier && !['high', 'medium', 'low'].includes(source.reliabilityTier)) {
     throw new Error(`invalid source reliabilityTier: ${source.id}`)
   }
-  if (source.parser && !['keyword-density', 'manual', 'github-research-project'].includes(source.parser)) {
+  if (source.parser && !['keyword-density', 'manual', 'github-research-project', 'oecd-policy-page', 'brookings-topic-page', 'eurostat-landing-page', 'ibm-investor-page'].includes(source.parser)) {
     throw new Error(`invalid source parser: ${source.id}`)
   }
   if (source.type && !['research', 'policy', 'labor', 'benchmark', 'reporting', 'statistics', 'enterprise', 'research-project'].includes(source.type)) {

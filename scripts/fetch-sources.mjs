@@ -2,7 +2,7 @@ import { readJson } from './lib/read-json.mjs'
 import { writeJson } from './lib/write-json.mjs'
 import { fetchText } from './lib/fetch-text.mjs'
 import { boundedScore } from './lib/text-metrics.mjs'
-import { extractHtmlMetrics } from './lib/extract-html-metrics.mjs'
+import { extractSourceHtmlMetrics } from './lib/extract-source-html.mjs'
 
 const site = readJson('data/site.json')
 const sources = readJson('data/sources/manifest.json')
@@ -195,8 +195,14 @@ async function fetchSource(source) {
   }
 
   try {
-    const html = await fetchText(source.url)
-    const metrics = extractHtmlMetrics(html, [/ai/gi, /automation/gi, /employment/gi, /labor/gi, /policy/gi, /benchmark/gi])
+    const extraHeaders =
+      source.parser === 'ibm-investor-page'
+        ? { 'Cache-Control': 'no-cache' }
+        : source.parser === 'oecd-policy-page'
+          ? { Referer: 'https://oecd.ai/' }
+          : {}
+    const html = await fetchText(source.url, extraHeaders)
+    const metrics = extractSourceHtmlMetrics(html, [/ai/gi, /automation/gi, /employment/gi, /labor/gi, /policy/gi, /benchmark/gi], source.parser)
     return {
       sourceId: source.id,
       status: 'fetched',
