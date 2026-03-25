@@ -379,6 +379,21 @@
   max-height: calc(100vh - 48px);
   overflow: auto;
   padding: 26px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.evidence-panel::-webkit-scrollbar,
+.clock-panel::-webkit-scrollbar,
+.methodology-footer::-webkit-scrollbar {
+  display: none;
+}
+
+.clock-panel,
+.evidence-panel,
+.methodology-footer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .panel-header {
