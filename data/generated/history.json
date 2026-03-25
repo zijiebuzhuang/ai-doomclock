@@ -28,11 +28,11 @@
   },
   {
     "date": "2026-03-25",
-    "displayTime": "05:57",
-    "minutesToMidnight": 357,
-    "rawEstimate": 25.2,
-    "actualReplacementEstimate": 10.6,
-    "compositeScore": 43.9,
+    "displayTime": "05:47",
+    "minutesToMidnight": 347,
+    "rawEstimate": 25.9,
+    "actualReplacementEstimate": 10.9,
+    "compositeScore": 45.4,
     "methodologyVersion": "v1"
   }
 ]

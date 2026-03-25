@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T02:38:25.237Z",
+  "generatedAt": "2026-03-25T03:18:00.832Z",
   "methodologyVersion": "v1",
-  "gitSha": "local-dev",
-  "displayTime": "05:57",
-  "minutesToMidnight": 357,
-  "rawEstimate": 25.2,
-  "actualReplacementEstimate": 10.6,
-  "compositeScore": 43.9,
+  "gitSha": "62edcf8",
+  "displayTime": "05:47",
+  "minutesToMidnight": 347,
+  "rawEstimate": 25.9,
+  "actualReplacementEstimate": 10.9,
+  "compositeScore": 45.4,
   "uncertaintyMinutes": 18,
   "summary": "The clock advances through accumulation, not prophecy. Adoption pressure and labor-market signals are moving faster than regulation.",
   "weeklyShiftMinutes": 7,
@@ -37,7 +37,7 @@
     {
       "key": "adoption",
       "label": "Enterprise adoption",
-      "score": 12.1,
+      "score": 12.5,
       "effect": "advance"
     },
     {
@@ -49,20 +49,20 @@
     {
       "key": "sentiment",
       "label": "Corporate intent",
-      "score": 5.6,
+      "score": 5.8,
+      "effect": "advance"
+    },
+    {
+      "key": "policy",
+      "label": "Policy support",
+      "score": 4.7,
       "effect": "advance"
     },
     {
       "key": "friction",
       "label": "Institutional friction",
-      "score": 4,
+      "score": 4.7,
       "effect": "delay"
-    },
-    {
-      "key": "policy",
-      "label": "Policy support",
-      "score": 3.4,
-      "effect": "advance"
     },
     {
       "key": "shock",

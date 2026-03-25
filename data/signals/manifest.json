@@ -27,7 +27,7 @@
     "date": "2026-03-25",
     "key": "adoption",
     "label": "Enterprise adoption",
-    "value": 55,
+    "value": 57,
     "direction": "advance",
     "detail": "AI is continuing to move from experimentation into real workflows and enterprise operating systems.",
     "sourceIds": [
@@ -73,7 +73,7 @@
     "date": "2026-03-25",
     "key": "policy",
     "label": "Policy support",
-    "value": 34,
+    "value": 47,
     "direction": "advance",
     "detail": "Policy remains mixed, but public frameworks still leave room for broad AI deployment rather than fully closing the lane.",
     "sourceIds": [
@@ -95,7 +95,7 @@
     "date": "2026-03-25",
     "key": "sentiment",
     "label": "Corporate intent",
-    "value": 56,
+    "value": 58,
     "direction": "advance",
     "detail": "Public company and research language still points toward scaling output with AI without proportional headcount growth.",
     "sourceIds": [
@@ -117,7 +117,7 @@
     "date": "2026-03-25",
     "key": "friction",
     "label": "Institutional friction",
-    "value": 33,
+    "value": 39,
     "direction": "delay",
     "detail": "Regulation, compliance, trust, and institutional drag still keep the clock from moving as quickly as raw capability headlines suggest.",
     "sourceIds": [

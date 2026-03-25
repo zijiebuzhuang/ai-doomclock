@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-25T02:38:20.044Z",
+  "fetchedAt": "2026-03-25T03:17:59.140Z",
   "mode": "auto-fetch-v2",
   "note": "Automated fetch updates slow-variable signals from approved sources using cleaned HTML extraction, distinct keyword weighting, and fallback to prior accepted state on fetch failure.",
   "domain": "zijiebuzhuang.github.io",
@@ -7,15 +7,15 @@
   "corpus": {
     "approvedSources": 15,
     "activeSources": 15,
-    "fetchedSources": 11,
-    "failedSources": 3,
+    "fetchedSources": 14,
+    "failedSources": 0,
     "skippedSources": 1
   },
   "sources": [
     {
       "sourceId": "stanford-ai-index",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "AI Index | Stanford HAI",
       "textLength": 6898,
       "keywordHits": 90,
@@ -23,14 +23,17 @@
     },
     {
       "sourceId": "oecd-ai-policy",
-      "status": "failed",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
-      "error": "fetch failed"
+      "status": "fetched",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
+      "title": "The OECD Artificial Intelligence Policy Observatory - OECD.AI",
+      "textLength": 3430,
+      "keywordHits": 81,
+      "distinctKeywordHits": 2
     },
     {
       "sourceId": "layoffs-fyi",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "Layoffs.fyi - Tech and Startup Layoff Tracker",
       "textLength": 2186,
       "keywordHits": 11,
@@ -39,7 +42,7 @@
     {
       "sourceId": "arc-prize",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "ARC Prize - Leaderboard",
       "textLength": 3082,
       "keywordHits": 8,
@@ -48,7 +51,7 @@
     {
       "sourceId": "osworld",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
       "textLength": 16008,
       "keywordHits": 62,
@@ -58,12 +61,12 @@
       "sourceId": "reuters-ai-labor",
       "status": "skipped",
       "reason": "manual source",
-      "fetchedAt": "2026-03-25T02:38:20.044Z"
+      "fetchedAt": "2026-03-25T03:17:59.140Z"
     },
     {
       "sourceId": "eur-lex-eu-ai-act",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "",
       "textLength": 157,
       "keywordHits": 0,
@@ -71,14 +74,17 @@
     },
     {
       "sourceId": "eurostat",
-      "status": "failed",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
-      "error": "fetch failed"
+      "status": "fetched",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
+      "title": "Home - Eurostat",
+      "textLength": 5513,
+      "keywordHits": 13,
+      "distinctKeywordHits": 3
     },
     {
       "sourceId": "nber",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "National Bureau of Economic Research | NBER",
       "textLength": 13837,
       "keywordHits": 36,
@@ -86,14 +92,17 @@
     },
     {
       "sourceId": "brookings-ai",
-      "status": "failed",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
-      "error": "fetch failed"
+      "status": "fetched",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
+      "title": "Artificial Intelligence | Brookings",
+      "textLength": 3534,
+      "keywordHits": 13,
+      "distinctKeywordHits": 2
     },
     {
       "sourceId": "world-bank-open-data",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "World Bank Open Data | Data",
       "textLength": 3612,
       "keywordHits": 6,
@@ -102,7 +111,7 @@
     {
       "sourceId": "our-world-in-data-ai",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "Artificial Intelligence - Our World in Data",
       "textLength": 16760,
       "keywordHits": 120,
@@ -111,7 +120,7 @@
     {
       "sourceId": "ilo",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "ILO Homepage | International Labour Organization",
       "textLength": 4367,
       "keywordHits": 22,
@@ -120,7 +129,7 @@
     {
       "sourceId": "ibm-investor",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "Investor Relations | IBM",
       "textLength": 1428,
       "keywordHits": 4,
@@ -129,7 +138,7 @@
     {
       "sourceId": "alphabet-investor",
       "status": "fetched",
-      "fetchedAt": "2026-03-25T02:38:20.044Z",
+      "fetchedAt": "2026-03-25T03:17:59.140Z",
       "title": "",
       "textLength": 1583,
       "keywordHits": 15,
@@ -153,7 +162,7 @@
     {
       "key": "adoption",
       "id": "signal-adoption-2026-03-25",
-      "value": 55,
+      "value": 57,
       "sourceIds": [
         "stanford-ai-index",
         "oecd-ai-policy",
@@ -179,7 +188,7 @@
     {
       "key": "policy",
       "id": "signal-policy-2026-03-25",
-      "value": 34,
+      "value": 47,
       "sourceIds": [
         "oecd-ai-policy",
         "eur-lex-eu-ai-act",
@@ -191,7 +200,7 @@
     {
       "key": "sentiment",
       "id": "signal-sentiment-2026-03-25",
-      "value": 56,
+      "value": 58,
       "sourceIds": [
         "stanford-ai-index",
         "brookings-ai",
@@ -203,7 +212,7 @@
     {
       "key": "friction",
       "id": "signal-friction-2026-03-25",
-      "value": 33,
+      "value": 39,
       "sourceIds": [
         "oecd-ai-policy",
         "eur-lex-eu-ai-act",
