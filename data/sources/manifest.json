@@ -298,5 +298,32 @@
     "signalEligible": true,
     "eventEligible": true,
     "active": true
+  },
+  {
+    "id": "karpathy-jobs",
+    "title": "US Job Market Visualizer",
+    "publisher": "karpathy/jobs",
+    "url": "https://github.com/karpathy/jobs",
+    "type": "research-project",
+    "tier": "B",
+    "cadence": "rolling",
+    "contribution": "slow_variable",
+    "regions": ["us"],
+    "tags": ["labor", "research", "ai-exposure", "occupations"],
+    "reviewStatus": "approved",
+    "whyIncluded": "A public research project that structures BLS occupation data and LLM-derived AI exposure scores into reusable artifacts that can inform labor and exposure framing.",
+    "fetchMode": "github",
+    "parser": "github-research-project",
+    "reliabilityTier": "medium",
+    "signalEligible": true,
+    "eventEligible": false,
+    "active": true,
+    "projectKind": "github-repo",
+    "repo": "karpathy/jobs",
+    "defaultBranch": "master",
+    "rawDataPaths": ["scores.json", "site/data.json", "occupations.csv"],
+    "methodologyPath": "README.md",
+    "promptPath": "prompt.md",
+    "signalMapping": ["labor", "capability", "sentiment"]
   }
 ]

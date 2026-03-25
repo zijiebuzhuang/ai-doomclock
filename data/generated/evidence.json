@@ -13,7 +13,7 @@
       "capability",
       "agent"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -31,7 +31,7 @@
       "adoption",
       "enterprise"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -40,7 +40,7 @@
     "title": "Labor displacement",
     "summary": "Public labor and enterprise sources continue to show workflow substitution pressure and more explicit workforce efficiency narratives.",
     "date": "2026-03-25",
-    "source": "Layoffs.fyi / International Labour Organization / World Bank Open Data / National Bureau of Economic Research / Brookings Artificial Intelligence / IBM Investor Relations",
+    "source": "Layoffs.fyi / International Labour Organization / World Bank Open Data / National Bureau of Economic Research / Brookings Artificial Intelligence / IBM Investor Relations / US Job Market Visualizer",
     "sourceUrl": "https://layoffs.fyi/",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -49,7 +49,7 @@
       "labor",
       "employment"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -67,7 +67,7 @@
       "policy",
       "governance"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -76,7 +76,7 @@
     "title": "Corporate intent",
     "summary": "Public company and research language still points toward scaling output with AI without proportional headcount growth.",
     "date": "2026-03-25",
-    "source": "Stanford AI Index / Brookings Artificial Intelligence / National Bureau of Economic Research / Alphabet Investor Relations",
+    "source": "Stanford AI Index / Brookings Artificial Intelligence / National Bureau of Economic Research / Alphabet Investor Relations / US Job Market Visualizer",
     "sourceUrl": "https://hai.stanford.edu/ai-index",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -85,7 +85,7 @@
       "corporate",
       "intent"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -103,7 +103,7 @@
       "policy",
       "friction"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -121,7 +121,7 @@
       "policy",
       "eu"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -140,7 +140,7 @@
       "us",
       "global"
     ],
-    "reviewedAt": "2026-03-25T03:18:00.832Z",
+    "reviewedAt": "2026-03-25T05:18:25.799Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   }

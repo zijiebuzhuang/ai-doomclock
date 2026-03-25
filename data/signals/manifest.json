@@ -27,7 +27,7 @@
     "date": "2026-03-25",
     "key": "adoption",
     "label": "Enterprise adoption",
-    "value": 57,
+    "value": 56,
     "direction": "advance",
     "detail": "AI is continuing to move from experimentation into real workflows and enterprise operating systems.",
     "sourceIds": [
@@ -49,7 +49,7 @@
     "date": "2026-03-25",
     "key": "labor",
     "label": "Labor displacement",
-    "value": 53,
+    "value": 56,
     "direction": "advance",
     "detail": "Public labor and enterprise sources continue to show workflow substitution pressure and more explicit workforce efficiency narratives.",
     "sourceIds": [
@@ -58,7 +58,8 @@
       "world-bank-open-data",
       "nber",
       "brookings-ai",
-      "ibm-investor"
+      "ibm-investor",
+      "karpathy-jobs"
     ],
     "impactLabel": "+ labor",
     "tags": [
@@ -73,7 +74,7 @@
     "date": "2026-03-25",
     "key": "policy",
     "label": "Policy support",
-    "value": 47,
+    "value": 34,
     "direction": "advance",
     "detail": "Policy remains mixed, but public frameworks still leave room for broad AI deployment rather than fully closing the lane.",
     "sourceIds": [
@@ -95,14 +96,15 @@
     "date": "2026-03-25",
     "key": "sentiment",
     "label": "Corporate intent",
-    "value": 58,
+    "value": 57,
     "direction": "advance",
     "detail": "Public company and research language still points toward scaling output with AI without proportional headcount growth.",
     "sourceIds": [
       "stanford-ai-index",
       "brookings-ai",
       "nber",
-      "alphabet-investor"
+      "alphabet-investor",
+      "karpathy-jobs"
     ],
     "impactLabel": "+ intent",
     "tags": [
@@ -117,7 +119,7 @@
     "date": "2026-03-25",
     "key": "friction",
     "label": "Institutional friction",
-    "value": 39,
+    "value": 33,
     "direction": "delay",
     "detail": "Regulation, compliance, trust, and institutional drag still keep the clock from moving as quickly as raw capability headlines suggest.",
     "sourceIds": [

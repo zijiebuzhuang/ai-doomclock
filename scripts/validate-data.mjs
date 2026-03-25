@@ -28,11 +28,22 @@ for (const source of sources) {
   if (sourceIds.has(source.id)) throw new Error(`duplicate source id: ${source.id}`)
   if (sourceUrls.has(source.url)) throw new Error(`duplicate source url: ${source.url}`)
   if (!['A', 'B', 'C'].includes(source.tier)) throw new Error(`invalid source tier: ${source.id}`)
-  if (source.fetchMode && !['html', 'json', 'rss', 'manual'].includes(source.fetchMode)) {
+  if (source.fetchMode && !['html', 'json', 'rss', 'manual', 'github'].includes(source.fetchMode)) {
     throw new Error(`invalid source fetchMode: ${source.id}`)
   }
   if (source.reliabilityTier && !['high', 'medium', 'low'].includes(source.reliabilityTier)) {
     throw new Error(`invalid source reliabilityTier: ${source.id}`)
+  }
+  if (source.parser && !['keyword-density', 'manual', 'github-research-project'].includes(source.parser)) {
+    throw new Error(`invalid source parser: ${source.id}`)
+  }
+  if (source.type && !['research', 'policy', 'labor', 'benchmark', 'reporting', 'statistics', 'enterprise', 'research-project'].includes(source.type)) {
+    throw new Error(`invalid source type: ${source.id}`)
+  }
+  if (source.type === 'research-project') {
+    for (const key of ['projectKind', 'methodologyPath', 'repo']) {
+      if (!source[key]) throw new Error(`research-project source missing ${key}: ${source.id}`)
+    }
   }
   sourceIds.add(source.id)
   sourceUrls.add(source.url)

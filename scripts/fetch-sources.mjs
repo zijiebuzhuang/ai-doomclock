@@ -8,6 +8,10 @@ const site = readJson('data/site.json')
 const sources = readJson('data/sources/manifest.json')
 const currentSignals = readJson('data/signals/manifest.json')
 const currentEvents = readJson('data/events/manifest.json')
+let previousFetchReport = null
+try {
+  previousFetchReport = readJson('data/generated/fetch-report.json')
+} catch {}
 
 const now = new Date()
 const today = now.toISOString().slice(0, 10)
@@ -89,6 +93,93 @@ function fallbackSignal(key) {
   return currentSignals.find((signal) => signal.key === key)
 }
 
+async function fetchGithubResearchProject(source) {
+  const repo = source.repo
+  const branch = source.defaultBranch ?? 'main'
+  const methodologyPath = source.methodologyPath ?? 'README.md'
+  const promptPath = source.promptPath
+  const rawDataPaths = source.rawDataPaths ?? []
+
+  const fetchRaw = async (path) => {
+    const url = `https://raw.githubusercontent.com/${repo}/${branch}/${path}`
+    try {
+      const body = await fetchText(url)
+      return { path, status: 'fetched', bytes: body.length, body }
+    } catch (error) {
+      return {
+        path,
+        status: 'failed',
+        error: error instanceof Error ? error.message : String(error),
+      }
+    }
+  }
+
+  const files = await Promise.all([fetchRaw(methodologyPath), ...rawDataPaths.map(fetchRaw), ...(promptPath ? [fetchRaw(promptPath)] : [])])
+  const fetchedFiles = files.filter((file) => file.status === 'fetched')
+  const scoreFile = files.find((file) => file.path === 'scores.json' && file.status === 'fetched')
+  const siteDataFile = files.find((file) => file.path === 'site/data.json' && file.status === 'fetched')
+
+  let scoreCount = null
+  let averageExposure = null
+  let siteRecordCount = null
+  let totalJobs = null
+
+  try {
+    if (scoreFile) {
+      const parsed = JSON.parse(scoreFile.body)
+      if (Array.isArray(parsed)) {
+        scoreCount = parsed.length
+        const exposures = parsed.map((item) => item.exposure).filter((value) => typeof value === 'number')
+        if (exposures.length) {
+          averageExposure = Number((exposures.reduce((sum, value) => sum + value, 0) / exposures.length).toFixed(2))
+        }
+      }
+    }
+  } catch {}
+
+  try {
+    if (siteDataFile) {
+      const parsed = JSON.parse(siteDataFile.body)
+      if (Array.isArray(parsed)) {
+        siteRecordCount = parsed.length
+        totalJobs = parsed.reduce((sum, item) => sum + (typeof item.jobs === 'number' ? item.jobs : 0), 0)
+      }
+    }
+  } catch {}
+
+  const nextEntry = {
+    sourceId: source.id,
+    status: fetchedFiles.length ? 'fetched' : 'failed',
+    fetchedAt: now.toISOString(),
+    projectKind: source.projectKind,
+    repo,
+    defaultBranch: branch,
+    fetchedFiles: files.map(({ body, ...rest }) => rest),
+    summary: {
+      methodologyPath,
+      rawDataPaths,
+      promptPath: promptPath ?? null,
+      scoreCount,
+      averageExposure,
+      siteRecordCount,
+      totalJobs,
+    },
+  }
+
+  const previousEntry = previousFetchReport?.sources?.find((item) => item.sourceId === source.id)
+  const hasUsableSummary = nextEntry.summary.scoreCount && nextEntry.summary.averageExposure
+  if (!hasUsableSummary && previousEntry?.status === 'fetched' && previousEntry?.summary?.scoreCount && previousEntry?.summary?.averageExposure) {
+    return {
+      ...previousEntry,
+      fetchedAt: now.toISOString(),
+      reusedFromCache: true,
+      fallbackReason: fetchedFiles.length ? 'partial-fetch-without-structured-summary' : 'fetch-failed',
+    }
+  }
+
+  return nextEntry
+}
+
 async function fetchSource(source) {
   if (source.fetchMode === 'manual' || !source.url) {
     return {
@@ -97,6 +188,10 @@ async function fetchSource(source) {
       reason: 'manual source',
       fetchedAt: now.toISOString(),
     }
+  }
+
+  if (source.parser === 'github-research-project') {
+    return fetchGithubResearchProject(source)
   }
 
   try {
@@ -127,18 +222,31 @@ function buildSignal(key, fetchedMap) {
   const sourceIds = config.ids.filter((id) => activeSource(id))
   const successful = sourceIds
     .map((id) => fetchedMap.get(id))
-    .filter((item) => item?.status === 'fetched')
+    .filter((item) => item?.status === 'fetched' && 'text' in item)
 
   if (!successful.length) {
     return fallbackSignal(key)
   }
+
+  const researchProjectSources =
+    ['labor', 'sentiment'].includes(key)
+      ? sources
+          .filter((source) => source.type === 'research-project' && source.active !== false && (source.signalMapping ?? []).includes(key))
+          .map((source) => ({ source, fetched: fetchedMap.get(source.id) }))
+          .filter(({ fetched }) => fetched?.status === 'fetched' && fetched.summary?.scoreCount && fetched.summary?.averageExposure)
+      : []
+
+  const researchProjectBoost = researchProjectSources.reduce((total, { fetched }) => {
+    const maxBoost = key === 'sentiment' ? 2 : 4
+    return total + Math.min(maxBoost, Math.round((fetched.summary.averageExposure / 10) * maxBoost))
+  }, 0)
 
   const rawScore = successful.reduce(
     (total, item) => total + Math.min(12, (item.distinctKeywordHits ?? 0) * 2 + Math.log10((item.keywordHits ?? 0) + 1) * 3),
     0,
   )
   const sourceCoverageBoost = Math.min(8, successful.length * 2)
-  const normalizedBoost = Math.min(config.maxBoost, Math.round(rawScore / Math.max(1, successful.length) + sourceCoverageBoost))
+  const normalizedBoost = Math.min(config.maxBoost, Math.round(rawScore / Math.max(1, successful.length) + sourceCoverageBoost + researchProjectBoost))
   const value = boundedScore(config.base + normalizedBoost)
 
   return {
@@ -149,7 +257,7 @@ function buildSignal(key, fetchedMap) {
     value,
     direction: config.direction,
     detail: config.detail,
-    sourceIds,
+    sourceIds: [...sourceIds, ...researchProjectSources.map(({ source }) => source.id)],
     impactLabel: config.impactLabel,
     tags: config.tags,
     reviewStatus: 'accepted',
@@ -169,7 +277,7 @@ async function main() {
   writeJson('data/generated/fetch-report.json', {
     fetchedAt: now.toISOString(),
     mode: 'auto-fetch-v2',
-    note: 'Automated fetch updates slow-variable signals from approved sources using cleaned HTML extraction, distinct keyword weighting, and fallback to prior accepted state on fetch failure.',
+    note: 'Automated fetch updates slow-variable signals from approved sources using cleaned HTML extraction, distinct keyword weighting, and fallback to prior accepted state on fetch failure. Research-project sources are fetched as structured repository summaries and can apply small auxiliary boosts to mapped slow variables.',
     domain: site.domain,
     canonicalBase: site.canonicalBase,
     corpus: {
@@ -179,7 +287,13 @@ async function main() {
       failedSources: fetchedSources.filter((item) => item.status === 'failed').length,
       skippedSources: fetchedSources.filter((item) => item.status === 'skipped').length,
     },
-    sources: fetchedSources.map(({ text, ...rest }) => rest),
+    sources: fetchedSources.map((item) => {
+      if ('text' in item) {
+        const { text, ...rest } = item
+        return rest
+      }
+      return item
+    }),
     updatedSignals: nextSignals.map((signal) => ({
       key: signal.key,
       id: signal.id,
