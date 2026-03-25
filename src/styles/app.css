@@ -39,13 +39,10 @@
 
 .clock-copy {
   position: relative;
-  z-index: 2;
   width: 100%;
 }
 
 .clock-heading-row {
-  position: relative;
-  z-index: 3;
   display: flex;
   justify-content: flex-start;
   gap: 16px;
@@ -165,8 +162,6 @@
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  position: relative;
-  z-index: 1;
   transition: color 120ms ease, border-color 120ms ease, background-color 120ms ease;
 }
 
