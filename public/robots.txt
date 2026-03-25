@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doomsday-clock.example/sitemap.xml
+Sitemap: https://zijiebuzhuang.github.io/ai-doomclock/sitemap.xml

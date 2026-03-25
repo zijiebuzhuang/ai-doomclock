@@ -1,13 +1,13 @@
 {
   "project": "Doomsday Clock",
-  "updatedAt": "2026-03-24T03:10:03.958Z",
+  "updatedAt": "2026-03-25T02:38:25.237Z",
   "methodologyVersion": "v1",
-  "domain": "doomsday-clock.example",
-  "canonicalBase": "https://doomsday-clock.example",
-  "currentDisplayTime": "04:58",
-  "compositeScore": 51.2,
+  "domain": "zijiebuzhuang.github.io",
+  "canonicalBase": "https://zijiebuzhuang.github.io/ai-doomclock",
+  "currentDisplayTime": "05:57",
+  "compositeScore": 43.9,
   "corpus": {
-    "approvedSources": 7,
+    "approvedSources": 15,
     "acceptedSignals": 6,
     "acceptedEvents": 2
   }

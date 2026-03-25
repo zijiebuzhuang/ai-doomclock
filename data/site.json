@@ -5,7 +5,8 @@
   "domain": "zijiebuzhuang.github.io",
   "canonicalBase": "https://zijiebuzhuang.github.io/ai-doomclock",
   "themeColor": "#000000",
-  "socialImage": "/assets/og-placeholder.png",
+  "assetBase": "/ai-doomclock/assets",
+  "socialImage": "/ai-doomclock/assets/og-placeholder.png",
   "twitterCard": "summary_large_image",
   "keywords": [
     "AI labor replacement",

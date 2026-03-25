@@ -7,10 +7,16 @@
     "effect": "advance",
     "severity": 4.5,
     "halfLifeDays": 180,
-    "sourceIds": ["reuters-ai-labor", "stanford-ai-index"],
+    "sourceIds": [
+      "reuters-ai-labor",
+      "stanford-ai-index"
+    ],
     "status": "accepted",
     "eventType": "labor",
-    "regions": ["us", "global"],
+    "regions": [
+      "us",
+      "global"
+    ],
     "reviewNote": "Accepted as a high-signal enterprise labor event based on corroborated reporting; kept as a shock rather than a slow variable because it is discrete and board-visible."
   },
   {
@@ -21,10 +27,15 @@
     "effect": "delay",
     "severity": 3,
     "halfLifeDays": 365,
-    "sourceIds": ["eur-lex-eu-ai-act", "oecd-ai-policy"],
+    "sourceIds": [
+      "eur-lex-eu-ai-act",
+      "oecd-ai-policy"
+    ],
     "status": "accepted",
     "eventType": "policy",
-    "regions": ["eu"],
+    "regions": [
+      "eu"
+    ],
     "reviewNote": "Accepted as a durable regulatory friction event because the date is fixed in the official legal text and materially affects deployment constraints."
   }
 ]

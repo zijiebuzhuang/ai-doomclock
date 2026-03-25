@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs'
 import { readJson } from './lib/read-json.mjs'
 
 const sources = readJson('data/sources/manifest.json')
@@ -27,6 +28,12 @@ for (const source of sources) {
   if (sourceIds.has(source.id)) throw new Error(`duplicate source id: ${source.id}`)
   if (sourceUrls.has(source.url)) throw new Error(`duplicate source url: ${source.url}`)
   if (!['A', 'B', 'C'].includes(source.tier)) throw new Error(`invalid source tier: ${source.id}`)
+  if (source.fetchMode && !['html', 'json', 'rss', 'manual'].includes(source.fetchMode)) {
+    throw new Error(`invalid source fetchMode: ${source.id}`)
+  }
+  if (source.reliabilityTier && !['high', 'medium', 'low'].includes(source.reliabilityTier)) {
+    throw new Error(`invalid source reliabilityTier: ${source.id}`)
+  }
   sourceIds.add(source.id)
   sourceUrls.add(source.url)
 }
@@ -73,5 +80,22 @@ if (acceptedEvents.length < 2) throw new Error('launch build requires at least 2
 
 const acceptedEvidence = evidence.filter((item) => item.reviewStatus === 'accepted')
 if (acceptedEvidence.length !== evidence.length) throw new Error('evidence output contains non-accepted items')
+
+const requiredAssets = [
+  'public/assets/og-placeholder.png',
+  'public/assets/favicon.ico',
+  'public/assets/favicon-32.png',
+  'public/assets/apple-touch-icon.png',
+  'public/assets/icon-192.png',
+  'public/assets/icon-512.png',
+]
+for (const assetPath of requiredAssets) {
+  const fullPath = new URL(`../${assetPath}`, import.meta.url)
+  if (!existsSync(fullPath)) throw new Error(`missing required asset: ${assetPath}`)
+}
+
+const fetchReport = readJson('data/generated/fetch-report.json')
+if (!fetchReport.mode) throw new Error('fetch-report requires mode')
+if (!fetchReport.domain) throw new Error('fetch-report requires domain')
 
 console.log('data validation passed')

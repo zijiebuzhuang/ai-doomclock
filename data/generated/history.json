@@ -25,5 +25,14 @@
     "actualReplacementEstimate": 12.3,
     "compositeScore": 51.2,
     "methodologyVersion": "v1"
+  },
+  {
+    "date": "2026-03-25",
+    "displayTime": "05:57",
+    "minutesToMidnight": 357,
+    "rawEstimate": 25.2,
+    "actualReplacementEstimate": 10.6,
+    "compositeScore": 43.9,
+    "methodologyVersion": "v1"
   }
 ]

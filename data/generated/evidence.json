@@ -1,11 +1,11 @@
 [
   {
-    "id": "signal-capability-2026-03",
+    "id": "signal-capability-2026-03-25",
     "title": "Model capability",
-    "summary": "Public benchmark leaders continue to improve on reasoning and computer-use tasks that map onto real desk work.",
-    "date": "2026-03-23",
-    "source": "ARC Prize Leaderboard / OSWorld",
-    "sourceUrl": "https://arcprize.org/leaderboard",
+    "summary": "Public benchmark and model ecosystem updates continue to improve on reasoning, computer-use, and general knowledge-work tasks.",
+    "date": "2026-03-25",
+    "source": "Stanford AI Index / ARC Prize Leaderboard / OSWorld / Alphabet Investor Relations / Our World in Data: Artificial Intelligence",
+    "sourceUrl": "https://hai.stanford.edu/ai-index",
     "effect": "advance",
     "contributionType": "slow_variable",
     "impactLabel": "+ capability",
@@ -13,16 +13,16 @@
       "capability",
       "agent"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
   {
-    "id": "signal-adoption-2026-03",
+    "id": "signal-adoption-2026-03-25",
     "title": "Enterprise adoption",
-    "summary": "AI is moving from pilot projects into production workflows across large organizations.",
-    "date": "2026-03-23",
-    "source": "Stanford AI Index",
+    "summary": "AI is continuing to move from experimentation into real workflows and enterprise operating systems.",
+    "date": "2026-03-25",
+    "source": "Stanford AI Index / OECD AI Policy Observatory / Our World in Data: Artificial Intelligence / IBM Investor Relations",
     "sourceUrl": "https://hai.stanford.edu/ai-index",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -31,16 +31,16 @@
       "adoption",
       "enterprise"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
   {
-    "id": "signal-labor-2026-03",
+    "id": "signal-labor-2026-03-25",
     "title": "Labor displacement",
-    "summary": "Hiring restraint and workflow substitution are increasingly visible, even when public labor data lags direct enterprise deployment.",
-    "date": "2026-03-23",
-    "source": "Layoffs.fyi / Stanford AI Index",
+    "summary": "Public labor and enterprise sources continue to show workflow substitution pressure and more explicit workforce efficiency narratives.",
+    "date": "2026-03-25",
+    "source": "Layoffs.fyi / International Labour Organization / World Bank Open Data / National Bureau of Economic Research / Brookings Artificial Intelligence / IBM Investor Relations",
     "sourceUrl": "https://layoffs.fyi/",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -49,16 +49,16 @@
       "labor",
       "employment"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
   {
-    "id": "signal-policy-2026-03",
+    "id": "signal-policy-2026-03-25",
     "title": "Policy support",
-    "summary": "National and regional policy support for AI deployment remains material even as governance requirements evolve.",
-    "date": "2026-03-23",
-    "source": "OECD AI Policy Observatory",
+    "summary": "Policy remains mixed, but public frameworks still leave room for broad AI deployment rather than fully closing the lane.",
+    "date": "2026-03-25",
+    "source": "OECD AI Policy Observatory / EUR-Lex AI Act / Brookings Artificial Intelligence / Eurostat",
     "sourceUrl": "https://oecd.ai/en/",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -67,16 +67,16 @@
       "policy",
       "governance"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
   {
-    "id": "signal-sentiment-2026-03",
+    "id": "signal-sentiment-2026-03-25",
     "title": "Corporate intent",
-    "summary": "Executives increasingly frame AI as a tool for scaling output without proportional headcount growth.",
-    "date": "2026-03-23",
-    "source": "Stanford AI Index",
+    "summary": "Public company and research language still points toward scaling output with AI without proportional headcount growth.",
+    "date": "2026-03-25",
+    "source": "Stanford AI Index / Brookings Artificial Intelligence / National Bureau of Economic Research / Alphabet Investor Relations",
     "sourceUrl": "https://hai.stanford.edu/ai-index",
     "effect": "advance",
     "contributionType": "slow_variable",
@@ -85,16 +85,16 @@
       "corporate",
       "intent"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
   {
-    "id": "signal-friction-2026-03",
+    "id": "signal-friction-2026-03-25",
     "title": "Institutional friction",
-    "summary": "Regulation, trust, and reliability constraints still absorb momentum and keep deployment uneven.",
-    "date": "2026-03-23",
-    "source": "OECD AI Policy Observatory",
+    "summary": "Regulation, compliance, trust, and institutional drag still keep the clock from moving as quickly as raw capability headlines suggest.",
+    "date": "2026-03-25",
+    "source": "OECD AI Policy Observatory / EUR-Lex AI Act / International Labour Organization / Brookings Artificial Intelligence",
     "sourceUrl": "https://oecd.ai/en/",
     "effect": "delay",
     "contributionType": "slow_variable",
@@ -103,7 +103,7 @@
       "policy",
       "friction"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -121,7 +121,7 @@
       "policy",
       "eu"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   },
@@ -140,7 +140,7 @@
       "us",
       "global"
     ],
-    "reviewedAt": "2026-03-24T03:10:03.958Z",
+    "reviewedAt": "2026-03-25T02:38:25.237Z",
     "methodologyVersion": "v1",
     "reviewStatus": "accepted"
   }

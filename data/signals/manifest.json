@@ -1,80 +1,137 @@
 [
   {
-    "id": "signal-capability-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-capability-2026-03-25",
+    "date": "2026-03-25",
     "key": "capability",
     "label": "Model capability",
-    "value": 70,
+    "value": 60,
     "direction": "advance",
-    "detail": "Public benchmark leaders continue to improve on reasoning and computer-use tasks that map onto real desk work.",
-    "sourceIds": ["arc-prize", "osworld"],
+    "detail": "Public benchmark and model ecosystem updates continue to improve on reasoning, computer-use, and general knowledge-work tasks.",
+    "sourceIds": [
+      "stanford-ai-index",
+      "arc-prize",
+      "osworld",
+      "alphabet-investor",
+      "our-world-in-data-ai"
+    ],
     "impactLabel": "+ capability",
-    "tags": ["capability", "agent"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "capability",
+      "agent"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   },
   {
-    "id": "signal-adoption-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-adoption-2026-03-25",
+    "date": "2026-03-25",
     "key": "adoption",
     "label": "Enterprise adoption",
-    "value": 64,
+    "value": 55,
     "direction": "advance",
-    "detail": "AI is moving from pilot projects into production workflows across large organizations.",
-    "sourceIds": ["stanford-ai-index"],
+    "detail": "AI is continuing to move from experimentation into real workflows and enterprise operating systems.",
+    "sourceIds": [
+      "stanford-ai-index",
+      "oecd-ai-policy",
+      "our-world-in-data-ai",
+      "ibm-investor"
+    ],
     "impactLabel": "+ adoption",
-    "tags": ["adoption", "enterprise"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "adoption",
+      "enterprise"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   },
   {
-    "id": "signal-labor-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-labor-2026-03-25",
+    "date": "2026-03-25",
     "key": "labor",
     "label": "Labor displacement",
-    "value": 58,
+    "value": 53,
     "direction": "advance",
-    "detail": "Hiring restraint and workflow substitution are increasingly visible, even when public labor data lags direct enterprise deployment.",
-    "sourceIds": ["layoffs-fyi", "stanford-ai-index"],
+    "detail": "Public labor and enterprise sources continue to show workflow substitution pressure and more explicit workforce efficiency narratives.",
+    "sourceIds": [
+      "layoffs-fyi",
+      "ilo",
+      "world-bank-open-data",
+      "nber",
+      "brookings-ai",
+      "ibm-investor"
+    ],
     "impactLabel": "+ labor",
-    "tags": ["labor", "employment"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "labor",
+      "employment"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   },
   {
-    "id": "signal-policy-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-policy-2026-03-25",
+    "date": "2026-03-25",
     "key": "policy",
     "label": "Policy support",
-    "value": 46,
+    "value": 34,
     "direction": "advance",
-    "detail": "National and regional policy support for AI deployment remains material even as governance requirements evolve.",
-    "sourceIds": ["oecd-ai-policy"],
+    "detail": "Policy remains mixed, but public frameworks still leave room for broad AI deployment rather than fully closing the lane.",
+    "sourceIds": [
+      "oecd-ai-policy",
+      "eur-lex-eu-ai-act",
+      "brookings-ai",
+      "eurostat"
+    ],
     "impactLabel": "+ policy",
-    "tags": ["policy", "governance"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "policy",
+      "governance"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   },
   {
-    "id": "signal-sentiment-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-sentiment-2026-03-25",
+    "date": "2026-03-25",
     "key": "sentiment",
     "label": "Corporate intent",
-    "value": 67,
+    "value": 56,
     "direction": "advance",
-    "detail": "Executives increasingly frame AI as a tool for scaling output without proportional headcount growth.",
-    "sourceIds": ["stanford-ai-index"],
+    "detail": "Public company and research language still points toward scaling output with AI without proportional headcount growth.",
+    "sourceIds": [
+      "stanford-ai-index",
+      "brookings-ai",
+      "nber",
+      "alphabet-investor"
+    ],
     "impactLabel": "+ intent",
-    "tags": ["corporate", "intent"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "corporate",
+      "intent"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   },
   {
-    "id": "signal-friction-2026-03",
-    "date": "2026-03-23",
+    "id": "signal-friction-2026-03-25",
+    "date": "2026-03-25",
     "key": "friction",
     "label": "Institutional friction",
-    "value": 37,
+    "value": 33,
     "direction": "delay",
-    "detail": "Regulation, trust, and reliability constraints still absorb momentum and keep deployment uneven.",
-    "sourceIds": ["oecd-ai-policy"],
+    "detail": "Regulation, compliance, trust, and institutional drag still keep the clock from moving as quickly as raw capability headlines suggest.",
+    "sourceIds": [
+      "oecd-ai-policy",
+      "eur-lex-eu-ai-act",
+      "ilo",
+      "brookings-ai"
+    ],
     "impactLabel": "- friction",
-    "tags": ["policy", "friction"],
-    "reviewStatus": "accepted"
+    "tags": [
+      "policy",
+      "friction"
+    ],
+    "reviewStatus": "accepted",
+    "generatedBy": "auto-fetch-v2"
   }
 ]

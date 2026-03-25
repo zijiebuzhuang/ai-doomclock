@@ -7,6 +7,8 @@
 - append history snapshots
 - review candidate milestone events
 - update methodology version when weights change
+- verify `data/generated/fetch-report.json` for failed fetches or suspicious score jumps
+- confirm `public/assets/` contains the required OG, favicon, apple-touch, and PWA icons
 
 ## Failure modes
 
